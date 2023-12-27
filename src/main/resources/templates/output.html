@@ -1,0 +1,12 @@
+<html  xmlns:th="http://www.tymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title> Tymeleaf Kadai</title>
+</head>
+<body>
+    <h1 th:text="#{title}"></h1>
+    <h2 th:text="#{output.title}"></h2>
+        <p th:text="'入力された値は「'+${val}+'」です。'"></p>
+        <a th:href="@{/input(previous=${val})}">入力画面へ戻る</a>
+</body>
+</html>
